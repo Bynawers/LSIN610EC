@@ -2,6 +2,7 @@ LDFLAGS="-L/usr/local/opt/flex/lib"
 
 run: exam
 #	cat prog.qst | ./exam
+	echo "Pierre 12, 13, 8\nPaul 4, 6\nJack 14" | ./exam
 
 exam: exam.tab.c exam.yy.c
 	gcc -o $@ $^ ${LDFLAGS} -ly -lfl
