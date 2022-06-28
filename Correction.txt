@@ -1,0 +1,55 @@
+Question 1/
+Une grammaire ambigue est une grammaire ayant deux dérivations 
+distinctes d'arbre de dérivation.
+
+Question 2/
+Relou à écrire :/
+
+Question 3/
+Pareil
+
+Question 4/
+Faire la table syntaxique de la grammaire et vérifier qu'il y a au plus
+un chemin
+
+Question 5/
+De la même manière qu'une table LL(1) hors il y aura deux chemin dans
+au moins une case de la table syntaxique.
+
+Question 6/
+Pour distinguer un mot clé d'un identifiant dans Lex/Flex,
+on retourne le token associé au mot clé / identifiant:
+(exemple: "while" { return WHILE; })
+
+Question 7/
+%left permet d'éviter les conflits shift/reduce en indiquant l'ordre 
+d'importance des tokens, plus le %left est bas dans la déclaration,
+plus il a de l'importance:
+  exemple:
+%left ADD SOUST
+%left MULT DIV     // multiplication et division + importante
+
+Question 8/
+On peut typer les terminaux lors de leur déclaration:
+%token <type> TERMINAUX
+
+Question 9/
+On peut typer les non-terminaux grâce au mot clé %type:
+%type <type> NON-TERMINAUX
+
+Question 10/
+L'intérêt de typer les terminaux est de pouvoir les utiliser par la suite
+pour effectuer des calculs ..., tandis que pour les non-terminaux;
+l'intérêt est de donner un type à la valeur de retour $$ afin de
+remonter une valeur typé;
+
+Question 11/
+Grammaire: (la mienne)
+S -> I
+I -> I I' | I'
+I'-> nom E
+E -> note , E | note
+
+fichier lex : exam.l
+fichier bison : exam.y
+(obvious) :/
