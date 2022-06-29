@@ -55,7 +55,7 @@
 > ***Liste de note*** :
 > Mini langage qui prend en entrée des lignes constituées d'un **prénom** suivi de **notes** séparées par des virgules
 >
-> <img src="exemple.png" width="145" height="93" />
+> <img src="image/exemple.png" width="145" height="93" />
 >
 > En sortie, on devra avoir la **moyenne général** pour chaque personne des notes :
 >
