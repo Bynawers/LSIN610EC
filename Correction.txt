@@ -21,7 +21,8 @@ un chemin
 
 Question 5/
 De la même manière qu'une table LL(1) hors il y aura deux chemin dans
-au moins une case de la table syntaxique.
+au moins une case de la table d'analyse syntaxique.
+..explication table LL(1)...
 
 Question 6/
 Pour distinguer un mot clé d'un identifiant dans Lex/Flex,
@@ -46,7 +47,7 @@ On peut typer les non-terminaux grâce au mot clé %type:
 
 Question 10/
 L'intérêt de typer les terminaux est de pouvoir les utiliser par la suite
-pour effectuer des calculs ..., tandis que pour les non-terminaux;
+pour effectuer des calculs, passer dans les fonctions... , tandis que pour les non-terminaux;
 l'intérêt est de donner un type à la valeur de retour $$ afin de
 remonter une valeur typé;
 
