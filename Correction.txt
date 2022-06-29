@@ -3,10 +3,17 @@ Une grammaire ambigue est une grammaire ayant deux dérivations
 distinctes d'arbre de dérivation.
 
 Question 2/
-Relou à écrire :/
+
+PREMIER(a) = {a}     PREMIER(S) = {a,b}
+PREMIER(b) = {b}     PREMIER(X) = {d}
+PREMIER(c) = {c}     PREMIER(X') = {c,ε}
+PREMIER(d) = {d}
 
 Question 3/
-Pareil
+
+SUIVANT(S) = {$}
+SUIVANT(X) = {$}
+SUIVANT(X') = {$}
 
 Question 4/
 Faire la table syntaxique de la grammaire et vérifier qu'il y a au plus
