@@ -64,3 +64,4 @@
 > Pour simplifier, on suppose que les notes sont des **entiers non signées**. Une moyenne est une moyenne **entière**.
 >
 > Vous devez donner la **grammaire**, le fichier **Lex** et **Bison**
+
